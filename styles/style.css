@@ -1,0 +1,24 @@
+html {
+    overflow-y: scroll;
+}
+
+.right{
+    float: right;
+}
+
+.textPic{
+    margin: 10px;
+    box-shadow: 0 0 2px 0 gray;
+}
+
+.text{
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 1px gray;
+    box-shadow: 0 0 2px 0 gray;
+    overflow: auto;
+}
+
+.center{
+    text-align: center;
+}
