@@ -22,11 +22,9 @@ class Dicegame
         $throw = $this->round->roll($this->players[$this->currentPlayer]->score);
         if ($throw == 1) {
             $this->save();
-        }
-        elseif ($throw == 100) {
+        } elseif ($throw == 100) {
             $this->players[$this->currentPlayer]->score = "WINNER!!!!";
-        }
-        else {
+        } else {
             array_push($this->throws, $throw);
         }
     }
@@ -36,8 +34,7 @@ class Dicegame
         $this->players[$this->currentPlayer]->score += $this->round->stop();
         if ($this->currentPlayer == 0) {
             $this->currentPlayer = 1;
-        }
-        else {
+        } else {
             $this->currentPlayer = 0;
         }
         $this->throws = [];

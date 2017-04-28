@@ -1,13 +1,12 @@
 <?php
 $app->session->start();
-if(isset($_SESSION['count'])) {
+if (isset($_SESSION['count'])) {
     $app->session->set('count', $app->session->get('count'));
-}
-else {
+} else {
     $app->session->set('count', 0);
 }
 
- ?>
+?>
 <div class="container" role="main">
         <div class="page-header">
             <h1>Session</h1>

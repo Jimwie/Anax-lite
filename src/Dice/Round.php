@@ -16,14 +16,11 @@ class Round
         if ($this->throw == 1) {
             $this->currentScore = 0;
             return $this->throw;
-        }
-
-        else {
+        } else {
             $this->currentScore += $this->throw;
             if ($score + $this->currentScore >= 100) {
                 return 100;
-            }
-            else {
+            } else {
                 return $this->throw;
             }
         }
@@ -35,5 +32,4 @@ class Round
         $this->currentScore = 0;
         return $roundScore;
     }
-
 }

@@ -1,7 +1,6 @@
 <?php
 namespace Jay\Dice;
 
-
 class Dice
 {
     public function throwDice()

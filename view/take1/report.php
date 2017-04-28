@@ -28,9 +28,27 @@
             <hr>
 
             <h3>Kmom02</h3>
-
             <p>
-                Kmom02 här...
+                <h4>Hur känns det att skriva kod utanför och inuti ramverket, ser du fördelar och nackdelar med de olika sätten?</h4>
+                Jag tycker det kändes bra att skriva sin kod i klasser när jag väl förstod ramverket. Även om det för mig vid första ögonkastet
+                känns lättare att greppa att skriva sin kod direkt i vyer så förstår jag att en backend kod kan bli väldigt stor och då kan det
+                vara skönt att separera den från vyn där man bara hanterar sin frontend.
+                <h4>Hur väljer du att organisera dina vyer?</h4>
+                Jag har alla basic-sidor (about, home, report etc) i en egen mapp, take1. Resterande som använder sig av klasser har egna mappar
+                där dom ligger tillsammans med eventuella processingsidor.
+                <h4>Berätta om hur du löste integreringen av klassen Session.</h4>
+                Jag valde att inkludera session-objektet i $app för att sedan använda klassens funktioner till att starta sessioner och utföra
+                de andra kraven i uppgifterna. Increment och Decrement sköts via processingsidor, och resterande uppgifter sköts direkt i routen
+                med hjälp av sessionklassens funktioner.
+                <h4>Berätta om hur du löste uppgiften med Tärningsspelet 100/Månadskalendern, hur du tänkte,
+                planerade och utförde uppgiften samt hur du organiserade din kod?</h4>
+                Jag valde att göra tärningsspelet. Jag löste uppgiften så att jag hade en huvudklass, Dicegame, som i sin tur utnyttjade de andra
+                klasserna jag skapade. Playerklassen innehåller en viss spelares poäng, Diceklassen innehåller en funktion som returnerar ett slumpat
+                nummer mellan 1 och 6, Roundklassen hanterar varje runda och är den klassen som kommunicerar mest med huvudklassen.
+                Sedan skickade jag med ett objekt av klassen Dicegame i sessionen och skriver ut all relevant info från den i vyn.
+                Länkarna för de olika saker man kan göra går till processingsidor som i sin tur anropar en specifik funktion i Dicegameobjektet.
+                <h4>Några tankar kring SQL så här långt?</h4>
+                SQL har inte vart några problem. Allting känns än så länge väldigt logiskt och uppgifterna känns pedagogiska.
             </p>
             <hr>
 

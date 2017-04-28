@@ -1,9 +1,8 @@
 <?php
 $app->session->start();
-if(isset($_SESSION['count'])) {
+if (isset($_SESSION['count'])) {
     $app->session->set('count', $app->session->get('count')+1);
-}
-else {
+} else {
     $app->session->set('count', 0);
 }
 

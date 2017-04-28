@@ -16,7 +16,7 @@ class Navbar implements
      *
      * @return string as HTML with the navbar.
      */
-     public function getHTML()
+    public function getHTML()
     {
         $navHtml = <<<EOD
         <nav class="navbar navbar-inverse">
@@ -29,7 +29,7 @@ class Navbar implements
               <ul class="nav navbar-nav">
 EOD;
 
-        foreach ($this->config["items"] as $key => $value) {
+        foreach ($this->config["items"] as $value) {
             $navHtml .= "<li><a href='" . $this->app->url->create($value["route"]) . "'>" . $value["text"] . "</a></li>";
         }
 

@@ -1,10 +1,9 @@
 <?php
 require ANAX_INSTALL_PATH . "/vendor/autoload.php";
 $app->session->start();
-if(isset($_SESSION['game'])) {
+if (isset($_SESSION['game'])) {
     $app->session->set('game', $app->session->get('game'));
-}
-else {
+} else {
     $game = new \Jay\Dice\Dicegame();
     $app->session->set('game', $game);
 }

@@ -11,7 +11,7 @@ class Session
      * @param string $name (optional) The name of the session
      * @return void
      */
-    public function __construct($name="MYSESSION")
+    public function __construct($name = "MYSESSION")
     {
         $this->name = $name;
     }
@@ -53,7 +53,7 @@ class Session
  * @param $default optional The return value if not found
  * @return string The session variable if present, else $default
  */
-    public function get($key, $default=false)
+    public function get($key, $default = false)
     {
         return (self::has($key)) ? $_SESSION[$key] : $default;
     }
@@ -88,6 +88,4 @@ class Session
     {
         var_dump($_SESSION);
     }
-
-
 }
